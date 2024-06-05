@@ -1,0 +1,151 @@
+/*--------------------------------------Global Variables----------------------------------------*/
+/* DARK Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #1d1e2f; /* color of link backgrounds */
+    --text-color: #cccccc; /* color of text */
+    --background-color: #121212; /* color of background */
+    --background-color-l: #222222; /* color of light background */
+    --hr-color: #0077ff; /* color of dividers */
+    --a-color: #0077ff; /* color of a tags */
+  }
+}
+
+/* LIGHT Mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: #dddddd; /* color of link backgrounds */
+    --text-color: #dddeee; /* color of text */
+    --background-color: #007878; /* color of background */
+    --background-color-l: #005656; /* color of light background */
+    --hr-color: #ffffff; /* color of dividers */
+    --a-color: #0000ff; /* color of a tags */
+  }
+}
+
+/*-----------------------------------Tag Attribute Vaiables-------------------------------------*/
+
+body {
+    overflow: hidden;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-color: var(--background-color);
+}
+
+textarea {
+  border: 2px solid black;
+  width: 225vh;
+  height: 98vh;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
+
+textarea:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+a, span {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--a-color);
+    width: fit-content;
+}
+
+h1 {
+  color: var(--text-color);
+  display: inline-block;
+  line-height: 10px;
+  cursor: default;
+}
+
+h2, h3, h4, h5, h6, text {
+  color: var(--text-color);
+  display: block;
+}
+
+nav {
+  border-bottom: 2px solid var(--hr-color);
+  margin-left: -8px;
+  margin-right: -8px;
+  text-indent: 5px;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+aside {
+    float: left;
+    width: 50%;
+    padding-left: 5px;
+    text-align: left;
+}
+
+section {
+    size: 50%;
+    float: right;
+    left: 50%;
+    position: absolute;
+}
+
+input:hover {
+  transform: none;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button, input[type="button"], input.button, select, option {
+  height: 25px;
+  font-size: 15px;
+  border: 2px;
+  border-radius: 100px;
+  display: inline-block;
+  transition-duration: 0.2s;
+  color: var(--a-color);
+  background-color: var(--color);
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 5px;
+}
+input.button, input[type="button"] {
+  width: 2500px;
+}
+
+button:hover, input[type="button"]:hover, input.button:hover, select:hover {
+box-shadow: #151515 0 0 1px;
+transform: scale(1.05);
+}
+
+div {
+  color: var(--text-color);
+}
+
+/*----------------------------------------User-Made variables-------------------------------------*/
+
+.border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--hr-color);
+}
+
+.border-top {
+  padding-top: 10px;
+  border-top: 2px solid var(--hr-color)
+}
+
+.border-left {
+  padding-left: 10px;
+  border-left: 2px solid var(--hr-color);
+}
+
+.border-right {
+  padding-right: 10px;
+  border-right: 2px solid var(--hr-color);
+}
+
+.border {
+  padding: 10px;
+  border: 2px solid var(--hr-color);
+}
+
+
+/*----------------------------------------Id Variables------------------------------------------*/
