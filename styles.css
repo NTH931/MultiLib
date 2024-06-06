@@ -26,7 +26,7 @@
 /*-----------------------------------Tag Attribute Vaiables-------------------------------------*/
 
 body {
-    overflow: hidden;
+    overflow: scroll;
     display: block;
     background-repeat: no-repeat;
     background-size: 100%, 100%;
@@ -107,17 +107,42 @@ button, input[type="button"], input.button, select, option {
   text-decoration: none;
   margin-right: 5px;
 }
-input.button, input[type="button"] {
-  width: 2500px;
-}
+input.button, input[type="button"] {width: 2500px;}
 
 button:hover, input[type="button"]:hover, input.button:hover, select:hover {
 box-shadow: #151515 0 0 1px;
 transform: scale(1.05);
 }
 
-div {
-  color: var(--text-color);
+div {color: var(--text-color);}
+
+ul {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+ul > li::before {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+ul > li#html::before {
+  content: url(images/html.png); background-size: 20px 20px
+}
+ul > li#css::before {
+  content: url(images/css.png); background-size: 20px 20px
+}
+ul > li#js::before {
+  content: url(images/js.png); background-size: 20px 20px
+}
+ul > li#php::before {
+  content: url(images/php.png); background-size: 20px 20px
+}
+ul > li#conf::before {
+  content: url(images/conf.png); background-size: 20px 20px
 }
 
 /*----------------------------------------User-Made variables-------------------------------------*/
